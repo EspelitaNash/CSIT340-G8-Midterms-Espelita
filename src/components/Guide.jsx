@@ -18,6 +18,11 @@ export default function Guide() {
         description="Sends the main branch to the remote named origin."
         command="git push -u origin main"
       />
+      <Section
+        title="Connect"
+        description="Links this local project to your forked repository on GitHub, under the name origin."
+        command="git remote add myfork https://github.com/EspelitaNash/CSIT340-G8-Midterms-Espelita.git"
+      />
     </main>
   );
 }
