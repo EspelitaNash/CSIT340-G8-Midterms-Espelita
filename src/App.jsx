@@ -4,7 +4,7 @@ import Docs from "./components/Docs";
 import Header from "./components/Header";
 import StatCard from "./components/StatCard";
 import Guide from "./components/Guide";
-
+import Feedback from "./components/Feedback";
 function App() {
   const [read, setRead] = useState(0);
   const [bookmarks, setBookmarks] = useState(0);
@@ -43,6 +43,7 @@ function App() {
       </div>
 
       <Guide />
+      <Feedback></Feedback>
     </div>
   );
 }
