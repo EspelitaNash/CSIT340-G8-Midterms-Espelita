@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Docs from "./components/Docs";
+import Header from "./components/Header";
 
 function App() {
   const [read, setRead] = useState(0);
@@ -24,11 +25,15 @@ function App() {
       <Sidebar Author="NASH ESPELITA" />
 
       <div className="flex items-end justify-between px-20 pt-10">
-        <Docs
-          onRead={handleRead}
-          onBookmark={handleBookmark}
-          onReset={handleReset}
-        />
+       
+        <div>
+          <Header />
+          <Docs
+            onRead={handleRead}
+            onBookmark={handleBookmark}
+            onReset={handleReset}
+          />
+        </div>
 
         <div className="flex gap-6">
           <div className="w-48 rounded-xl border-2 border-[#5C4F4A] py-4 text-center">
